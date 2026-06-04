@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borolox MC Proshanto</title>
+    <!-- FontAwesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cinzel', 'Georgia', 'Segoe UI', serif; /* Serif font for a regal, historic feel */
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Majestic Blue & Twilight Knight Background */
+            background: linear-gradient(-45deg, #0a1128, #1c2541, #001f54, #003049);
+            background-size: 400% 400%;
+            animation: knightGradient 12s ease infinite;
+            padding: 40px 20px;
+        }
+
+        @keyframes knightGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Steel Armor Profile Card */
+        .profile-container {
+            background: rgba(10, 25, 47, 0.75);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            /* Silver/Steel double border framing typical of fantasy/medieval shields */
+            border: 2px solid rgba(192, 192, 192, 0.3);
+            outline: 1px solid rgba(255, 255, 255, 0.1);
+            outline-offset: -6px;
+            border-radius: 20px; /* Slightly sharper corners for armor aesthetic */
+            width: 100%;
+            max-width: 500px;
+            padding: 50px 35px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 
+                        inset 0 0 20px rgba(0, 119, 182, 0.2);
+            color: #e0e1dd;
+        }
+
+        /* Large Shield-Style Profile Photo Section */
+        .profile-header .avatar-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px auto;
+        }
+
+        .profile-header img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            /* Royal Silver/Cobalt Border */
+            border: 5px solid #bdc3c7;
+            box-shadow: 0 0 25px rgba(0, 180, 216, 0.4), 
+                        0 8px 20px rgba(0, 0, 0, 0.6);
+            transition: all 0.4s ease;
+        }
+
+        /* Hover effect simulating a shining shield */
+        .profile-header img:hover {
+            transform: scale(1.04);
+            border-color: #f5cb5c; /* Shifts to a gold accent on hover */
+            box-shadow: 0 0 35px rgba(245, 203, 92, 0.6);
+        }
+
+        /* Typography */
+        .profile-header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #f5cb5c; /* Crest Gold color */
+            text-shadow: 0 3px 6px rgba(0,0,0,0.5);
+        }
+
+        .profile-header p {
+            font-size: 1rem;
+            color: #9aa5b1;
+            margin-bottom: 40px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        /* Social Media Links Section */
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        /* Button design mimicking polished gauntlets/steel plates */
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            padding: 16px;
+            border-radius: 8px; /* Sharp, structured look */
+            background: rgba(28, 37, 65, 0.6);
+            color: #e0e1dd;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 1px solid rgba(192, 192, 192, 0.2);
+        }
+
+        .social-btn i {
+            color: #00b4d8; /* Majestic Cobalt icon accent */
+            transition: color 0.3s ease;
+        }
+
+        /* Active Hover: Engages gold accents and heavy metallic pop */
+        .social-btn:hover {
+            background: #0077b6; /* Pure Majestic Blue */
+            color: #ffffff;
+            border-color: #f5cb5c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+        }
+
+        .social-btn:hover i {
+            color: #f5cb5c; /* Icon turns gold on hover */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 480px) {
+            .profile-container {
+                padding: 35px 20px;
+            }
+            .profile-header .avatar-container {
+                width: 160px;
+                height: 160px;
+            }
+            .profile-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Knight Theme Header -->
+        <div class="profile-header">
+            <div class="avatar-container">
+                <!-- Replace with an armor/knight aesthetic photo link or your own portrait -->
+                <img src="https://scontent.fcgp27-1.fna.fbcdn.net/v/t39.30808-6/428447405_352635514404614_3381559510054482881_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=fHxZLZ0-3OcQ7kNvwEnMlMv&_nc_oc=AdoGp_XgylT2Xh-GxcEIvyTuAkI5Dj_fFzueyHCJENqA9yZ9zfeU7rn2zUt6A7iB7DA&_nc_zt=23&_nc_ht=scontent.fcgp27-1.fna&_nc_gid=3pryAU-1Xak5PrNqhgjmag&_nc_ss=7b2a8&oh=00_Af-vyF8ZXjmqX2xkRAZkre97ffBSRj_Pq7eePiI4pdWeUg&oe=6A277D68" alt="Knight Theme Profile Picture">
+            </div>
+            <h1>Proshanto Barua</h1>
+            <p>Tallented MC Student</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100086805877695" target="_blank" class="social-btn">
+    <i class="fab fa-facebook-f"></i> Facebook
+</a>
+            <a href="https://www.tiktok.com/search?q=proshanto%20bhalo%20nai&t=1780584628288" target="_blank" class="social-btn">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a href="#" target="_blank" class="social-btn">
+    <i class="svg-icon-onlyfans"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="vertical-align: middle; margin-right: 4px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5zm1.5-4c-.83 0-1.5-.67-1.5-1.5S11.67 8 12.5 8s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></i> OnlyFans
+</a>
+      
+        </div>
+    </div>
+
+</body>
+</html>
